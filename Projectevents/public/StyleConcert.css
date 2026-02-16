@@ -1,0 +1,179 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #fe4fd8, #ae00fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+/* Page Title */
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Wrapper */
+form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* Form Fields */
+form div {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input[type="text"],
+form select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+form input[type="text"]:focus,
+form select:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 8px rgba(79, 172, 254, 0.5);
+}
+
+input[type="submit"],#downloadButton,
+button {
+    margin-top:15px;
+    background: #c74ffe;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background: #061119;
+    box-shadow: 0 4px 12px rgba(0, 120, 212, 0.5);
+    transform: translateY(-2px);
+}
+
+#database {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#database label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#database input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+#database input[type="text"]:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 8px rgba(79, 172, 254, 0.5);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#results {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    color: #333;
+    max-height: 150vh;
+    overflow-y: auto; 
+}
+
+#results::-webkit-scrollbar {
+    width: 8px;
+}
+
+#results::-webkit-scrollbar-thumb {
+    background: #c74ffe;
+    border-radius: 4px;
+}
+
+#results::-webkit-scrollbar-thumb:hover {
+    background: #8a35b3;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+
+#LogOutButton{
+    margin-bottom:20px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,132 @@
+/*Name:Emhenya Supreme, Student Number:3132969*/
+form div {
+    display: flex;        
+    align-items: right;    
+    margin-bottom: 15px;
+}
+
+form label {
+    width: 200px;
+    margin-right: 10px;
+}
+
+form input {
+    width:150px;
+}
+
+#database{
+    margin-top: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #f094cd, #6f02bd);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    color:#a9038d;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+form#registerForm {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #000000;
+    width: 100%;
+    max-width: 500px;
+}
+
+form#registerForm:hover {
+    transform: translateY(-5px);
+}
+
+form#loginForm{
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #000000;
+    width: 100%;
+    max-width: 500px;
+}
+
+form#loginForm:hover {
+    transform: translateY(-5px);
+}
+
+label {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+    display: inline-block;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d5d3d3;
+    border-radius: 10px;
+    transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #9d9d9d;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #606060;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-3px);
+    background-color: #0c0c0c;
+}
+
+.login-link {
+    display: block;
+    margin-top: 10px;
+    color: #05c5e2;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    text-decoration: underline;
+}
+
+.login-link:hover {
+    color: #6a11cb;
+}
+
+#message {
+    margin-left: 40px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
