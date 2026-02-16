@@ -1,0 +1,19 @@
+{# Name:Emhenya Supreme, Student Number:3132969#}
+<!-- views/concerts.njk -->
+{% extends "layout.njk" %}
+
+{% block title %}Concerts for {{ artist }} in {{ location }}{% endblock %}
+
+{% block content %}
+    {% if concerts.length > 0 %}
+        <h3>Concerts for {{ artist }} in {{ location }}:</h3>
+        <ul>
+            {% for concert in concerts %}
+                <li>{{ concert.name }} at {{ concert.venue }} in {{ concert.city }}, {{ concert.state }} on {{ concert.date }} - 
+                <a href="{{ concert.ticketUrl }}">More info</a></li><br>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No concerts found for {{ artist }} in {{ location }}</p>
+    {% endif %}
+{% endblock %}

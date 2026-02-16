@@ -1,0 +1,66 @@
+<!--Name:Emhenya Supreme, Student Number:3132969-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert Form</title>
+    <link rel="stylesheet" type="text/css" href="StyleConcert.css">
+    <script src="/fetch/results.js" defer></script>
+</head>
+<body>
+    <h1>Concert Finder</h1>
+
+    <div id="signupLoginLink">
+        <button type="button" id="LogOutButton">Log Out</button>
+    </div>
+    <form id="concertForm">
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="GB">United Kingdom</option>
+                <option value="AU">Australia</option>
+                <option value="DE">Germany</option>
+                <option value="FR">France</option>
+                <option value="IT">Italy</option>
+                <option value="ES">Spain</option>
+                <option value="NL">Netherlands</option>
+                <option value="SE">Sweden</option>
+                <option value="NO">Norway</option>
+                <option value="CH">Switzerland</option>
+                <option value="NZ">New Zealand</option>
+                <option value="IE">Ireland</option>
+                <option value="JP">Japan</option>
+                <option value="KR">South Korea</option>
+                <option value="BR">Brazil</option>
+                <option value="MX">Mexico</option>
+                <option value="IN">India</option>
+            </select>
+        </div>
+        <div>
+            <label for="artist">Artist Name:</label>
+            <input type="text" id="artist" name="artist" required>
+        </div>
+        <input type="submit" value="Find Concerts">
+
+        <div id="database">
+            <label for="searchArtist">Search Artist:</label>
+            <input type="text" id="searchArtist" name="searchArtist" placeholder="Artist for Database Search">
+        </div>
+
+        <button type="button" id="filterButton">Filter Database</button>
+        <button type="button" id="dbDownloadButton" style="display: inline-block;">Download Previous Results</button>
+
+    </form>
+
+    <h2>Concert Results</h2>
+    <button id="downloadButton" style="display: none;" onclick="window.location.href='/download'">Download Concerts</button>
+    <div id="results"></div>
+
+
+</body>
+</html>
