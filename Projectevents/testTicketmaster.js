@@ -144,6 +144,7 @@ async function fetchConcertData(artist, location) {
         });
 
         const data = await response.json();
+        console.log(data);
         if (data._embedded && data._embedded.events.length > 0) {
             return data._embedded.events
                 .filter(event => event.classifications && event.classifications.some(c => c.segment && c.segment.name === "Music"))
